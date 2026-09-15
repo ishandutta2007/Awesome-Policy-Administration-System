@@ -1,0 +1,8 @@
+*.bak
+*.bk
+*.env
+.cache
+__pycache__/
+contributors.txt
+temp_repo_clone
+node_modules
