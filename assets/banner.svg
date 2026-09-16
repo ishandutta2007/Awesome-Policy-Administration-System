@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Dark Tech Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="primaryTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="50%" stop-color="#a78bfa" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#374151" stroke-width="0.75" stroke-opacity="0.3" />
+    </pattern>
+
+    <!-- CSS Keyframe Animations for Dynamic SVG -->
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.05); }
+      }
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 100; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes floatNode {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes shimmerText {
+        0% { stop-color: #60a5fa; }
+        50% { stop-color: #34d399; }
+        100% { stop-color: #60a5fa; }
+      }
+      .animated-bg-circle {
+        animation: pulseGlow 6s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .flowing-path {
+        stroke-dasharray: 8 8;
+        animation: dashFlow 4s linear infinite;
+      }
+      .floating-card {
+        animation: floatNode 5s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="400" fill="url(#bgGradient)" />
+  <rect width="1280" height="400" fill="url(#grid)" />
+
+  <!-- Animated Ambient Glow Orbs -->
+  <circle class="animated-bg-circle" cx="200" cy="100" r="180" fill="#3b82f6" filter="blur(60px)" opacity="0.25" />
+  <circle class="animated-bg-circle" cx="1080" cy="300" r="200" fill="#8b5cf6" filter="blur(70px)" opacity="0.2" />
+
+  <!-- Flowing Architectural Connecting Lines -->
+  <path class="flowing-path" d="M 150 200 Q 350 80 640 200 T 1130 200" fill="none" stroke="#60a5fa" stroke-width="2" stroke-opacity="0.6" />
+  <path class="flowing-path" d="M 150 200 Q 350 320 640 200 T 1130 200" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-opacity="0.5" />
+
+  <!-- Central Hero Card -->
+  <g class="floating-card" transform="translate(240, 50)">
+    <!-- Glassmorphism Card Frame -->
+    <rect x="0" y="0" width="800" height="300" rx="20" fill="url(#cardGradient)" stroke="#4b5563" stroke-width="1.5" />
+    <rect x="0" y="0" width="800" height="300" rx="20" fill="url(#accentGlow)" />
+
+    <!-- Top Badge Header -->
+    <g transform="translate(250, 30)">
+      <rect x="0" y="0" width="300" height="34" rx="17" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+      <text x="150" y="22" fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle" letter-spacing="1">
+        🛡️ CORE INSURANCE ECOSYSTEM
+      </text>
+    </g>
+
+    <!-- Title -->
+    <text x="400" y="115" fill="url(#primaryTextGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" text-anchor="middle" letter-spacing="-0.5">
+      Awesome Policy Administration Systems
+    </text>
+
+    <!-- Subtitle -->
+    <text x="400" y="155" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="400" text-anchor="middle">
+      Curated Enterprise SaaS Platforms &amp; Open-Source Policy Lifecycle Engines
+    </text>
+
+    <!-- Feature Pills -->
+    <g transform="translate(80, 195)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="180" height="42" rx="10" fill="#1f2937" stroke="#374151" stroke-width="1" />
+        <text x="90" y="26" fill="#60a5fa" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">⚡ Product Rating</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(200, 0)">
+        <rect x="0" y="0" width="240" height="42" rx="10" fill="#1f2937" stroke="#374151" stroke-width="1" />
+        <text x="120" y="26" fill="#34d399" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">📋 Policy Lifecycle Management</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(460, 0)">
+        <rect x="0" y="0" width="180" height="42" rx="10" fill="#1f2937" stroke="#374151" stroke-width="1" />
+        <text x="90" y="26" fill="#f472b6" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">🔄 Quoting &amp; Issuance</text>
+      </g>
+    </g>
+  </g>
+</svg>
