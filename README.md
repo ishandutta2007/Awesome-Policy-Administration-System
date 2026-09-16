@@ -60,7 +60,7 @@ Full-featured, regulated policy administration systems are largely commercial du
 
 The table below lists top open-source repositories and standards, sorted descending by GitHub star count:
 
-| Repository / Project 📦 | Description 📝 | GitHub Stars ⭐ |
+| Repository / Project 📦 | Description 📝 | GitHub_Stars ⭐ |
 | :--- | :--- | :--- |
 | **[permitio/opal](https://github.com/permitio/opal)** | [<img src="https://img.shields.io/github/stars/permitio/opal?style=social&color=white" alt="opal stars"/>](https://github.com/permitio/opal/stargazers) | Open Policy Administration Layer for real-time authorization and policy lifecycle state updates. |
 | **[hyperjumptech/grule-rule-engine](https://github.com/hyperjumptech/grule-rule-engine)** | [<img src="https://img.shields.io/github/stars/hyperjumptech/grule-rule-engine?style=social&color=white" alt="grule stars"/>](https://github.com/hyperjumptech/grule-rule-engine/stargazers) | Go-based rule engine library for executing complex insurance rating rules, underwriting policies, and risk calculations. |
